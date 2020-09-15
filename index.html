@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang = "ja">
+<head>
+  <meta charset = "utf-8">
+  <meta http-equiv ="X-UA-Compatible" content = "ie=edge">
+  <link rel = "stylesheet" href = "memo.css">
+</head>
+<body>
+  <p>
+    title：<input id="key" type="text">
+  </p>
+  <p>
+    content：<input id="value" type="text">
+  </p>
+    <p>
+      <input type="button" value="ストレージに保存" onClick="set()">
+    </p>
+    <!-- <p>
+      <input type="button" value="ストレージをクリア" onClick="cle()">
+    </p> -->
+    <p>
+      <input type="button" value="オールクリア" onClick="allCle()">
+    </p>
+      <div id="show_result"></div>
+      <div id="show_btn"></div>
+<script src = "memo.js">
+</script>
+<script src = "memo2.js">
+</script>
+<script>
+
+  window.onload =  function loadBtns(){
+    for(let i = 0; i < myStorage.length; i++){
+      newMemoBtn(myStorage.key(i));
+    } 
+  };
+</script>
+</script>
+</body>
+</html>
